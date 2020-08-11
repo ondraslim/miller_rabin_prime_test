@@ -5,7 +5,7 @@ def is_prime_miller_rabin(n, k=128):
     """ Test if a number is prime using Miller Rabin algorithm.
         -> find a nontrivial square roots of 1 mod n
         - no Carmichael numbers
-        - complexity: O(log(n))
+        - complexity: O(k * log(n))
         Args:
             n -- int -- the number to test
             k -- int -- the number of tests to do
